@@ -27,5 +27,5 @@ jobs:
       - deploy:
           name: Execute CodeDeploy
           command: |
-            aws deploy create-deployment --application-name admin --deployment-group-name tst-admin-deploygroup --deployment-config-name CodeDeployDefault.AllAtOnce --s3-location bucket=tst-cd-willgroup,bundleType=zip,key=admin.zip --region ap-southeast-1"
-            aws deploy create-deployment --application-name www --deployment-group-name tst-www-deploygroup --deployment-config-name CodeDeployDefault.AllAtOnce --s3-location bucket=tst-cd-willgroup,bundleType=zip,key=www.zip --region ap-southeast-1"
+            aws deploy create-deployment --application-name admin --deployment-group-name admin --deployment-config-name CodeDeployDefault.AllAtOnce --s3-location bucket=tst-cd-willgroup1,bundleType=zip,key=admin.zip --region ap-southeast-1"
+            aws deploy create-deployment --application-name www --deployment-group-name www --deployment-config-name CodeDeployDefault.AllAtOnce --s3-location bucket=tst-cd-willgroup1,bundleType=zip,key=www.zip --region ap-southeast-1"
