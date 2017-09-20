@@ -15,7 +15,7 @@ jobs:
             pip install awscli
       - run:
           name: zip code
-          command: | 
+          command: |
             zip -r admin.zip ./admin
             zip -r www.zip ./www
       - run:
