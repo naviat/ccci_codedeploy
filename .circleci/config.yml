@@ -16,8 +16,8 @@ jobs:
       - run:
           name: zip code
           command: |
-            zip -r admin.zip /admin/
-            zip -r www.zip /www/
+            zip -r admin.zip /admin/*
+            zip -r www.zip /www/*
       - run:
           name: Upload code to S3
           command: |
