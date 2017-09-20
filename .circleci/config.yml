@@ -21,8 +21,8 @@ jobs:
       - run:
           name: Upload code to S3
           command: |
-            aws s3 cp admin.zip s3://tst-cd-willgroup1/admin.zip
-            aws s3 cp www.zip s3://tst-cd-willgroup1/www.zip            
+            aws s3 cp admin/admin.zip s3://tst-cd-willgroup1/admin.zip
+            aws s3 cp www/www.zip s3://tst-cd-willgroup1/www.zip            
           #command: aws s3 sync /home/ubuntu/ s3://tst-cd-willgroup/hoila.zip
       - deploy:
           name: Execute CodeDeploy
