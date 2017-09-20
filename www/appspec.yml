@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /home/fajob/www/admin
+    destination: /home/fajob/www
 hooks:
   BeforeInstall:
     - location: scripts/install_dependencies
